@@ -228,6 +228,35 @@ section{
   animation:pulse 2.5s infinite;
 }
 
+.website-btn{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  margin-top:20px;
+  padding:12px 28px;
+  background:linear-gradient(135deg, #3b82f6,#9333ea);
+  color:#1a1a1a;
+  text-decoration:none;
+  border-radius:50px;
+  font-weight:700;
+  font-size:15px;
+  letter-spacing:0.5px;
+  box-shadow:0 8px 25px rgba(212, 175, 55, 0.35);
+  transition:all 0.35s ease;
+  border:1px solid rgba(255,255,255,0.3);
+  backdrop-filter:blur(10px);
+}
+
+.website-btn:hover{
+  transform:translateY(-4px);
+  box-shadow:0 15px 35px rgba(212, 175, 55, 0.5);
+  background:linear-gradient(135deg, #f7e27e, #d4af37);
+}
+
+.website-btn:active{
+  transform:translateY(-1px);
+}
+
 @keyframes pulse{
   0%{ transform:scale(1); }
   50%{ transform:scale(1.08); }
